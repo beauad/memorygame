@@ -87,8 +87,12 @@ h1 {
 
 .score-panel {
     text-align: left;
-    width: 345px;
+    width: 600px;
     margin-bottom: 10px;
+}
+
+.score-panel .stars-heading {
+    display: inline-block;
 }
 
 .score-panel .stars {
@@ -96,6 +100,16 @@ h1 {
     padding: 0;
     display: inline-block;
     margin: 0 5px 0 0;
+
+}
+.score-panel .moves {
+    margin-left: 10px;
+    display: inline-block;
+}
+
+.score-panel .moves-heading {
+    margin-left: 20px;
+    display: inline-block;
 }
 
 .score-panel .stars li {
@@ -103,7 +117,42 @@ h1 {
     display: inline-block;
 }
 
+.score-panel .timer {
+    display: inline-block;
+    margin-left: 45px;
+}
+
 .score-panel .restart {
     float: right;
+    cursor: pointer;
+    font-size: 40px;
+}
+
+#modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-conent {
+    background-color: white;
+    margin: 5% auto;
+    width: 60%;
+    height: 70%;
+    color: black;
+    text-align: center;
+    opacity: none;
+    font-size: 25px;
+}
+
+.close-button {
+    position: absolute;
+    right: 22%;
+    font-size: 40px;
     cursor: pointer;
 }
