@@ -141,12 +141,17 @@ card.addEventListener('click', function() {
           modalContent.innerHTML =
           `<span class="close-button">&times;</span>
           </br>
-          </br>
-          Congrats! <br> You won! </br></br>
+          <p class="congrats">Congrats! <br> You won!</p>
           Moves:  ${movesText} </br></br>
           Time:   ${timerText} </br></br>
           Star Rating:
-          <ul style="list-style-type:none;">${starsText}</ul>`
+          <ul style="list-style-type:none;">${starsText}</ul>
+          Play again? 
+          <div class="restart-modal" onClick="window.location.reload()">
+            <i class="fa fa-repeat"></i>
+          </div>
+          </br>
+          </br>`
           //To hide the modal
           const closeButton = document.querySelector(".close-button")
           closeButton.onclick = function() {
@@ -155,7 +160,7 @@ card.addEventListener('click', function() {
         }
     });
   }
-}
+};
 
 //Start game function to run the game
 startGame();

@@ -93,6 +93,7 @@ h1 {
 
 .score-panel .stars-heading {
     display: inline-block;
+    font-size: 20px;
 }
 
 .score-panel .stars {
@@ -100,32 +101,39 @@ h1 {
     padding: 0;
     display: inline-block;
     margin: 0 5px 0 0;
+    font-size: 20px;
 
 }
 .score-panel .moves {
     margin-left: 10px;
     display: inline-block;
+    font-size: 20px;
 }
 
 .score-panel .moves-heading {
     margin-left: 20px;
     display: inline-block;
+    font-size: 20px;
 }
 
 .score-panel .stars li {
     list-style: none;
     display: inline-block;
+    font-size: 20px;
+    color: rgb(81, 214, 255);
 }
 
 .score-panel .timer {
     display: inline-block;
     margin-left: 45px;
+    font-size: 20px;
 }
 
 .score-panel .restart {
     float: right;
     cursor: pointer;
     font-size: 40px;
+    color: rgb(255, 123, 0);
 }
 
 #modal {
@@ -143,11 +151,19 @@ h1 {
     background-color: white;
     margin: 5% auto;
     width: 60%;
-    height: 70%;
+    height: 90%;
     color: black;
     text-align: center;
     opacity: none;
     font-size: 25px;
+    border: solid 10px black;
+    box-shadow: 12px 15px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+.modal-content, li {
+    color: rgb(81, 214, 255);
+    display: inline;
+    font-size: 100px;
 }
 
 .close-button {
@@ -155,4 +171,15 @@ h1 {
     right: 22%;
     font-size: 40px;
     cursor: pointer;
+}
+
+.restart-modal {
+    font-size: 40px;
+    cursor: pointer;
+    color: rgb(255, 123, 0);
+}
+
+.congrats {
+    color: rgb(255, 0, 85);
+    font-size: 30px;
 }
