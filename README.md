@@ -18,3 +18,9 @@ For specific, detailed instructions, look at the project instructions in the [Ud
 This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
 
 For details, check out [CONTRIBUTING.md](CONTRIBUTING.md).
+
+The game starts on refresh.
+
+All code Javascript code is explained thoroughly throughout Javascript file.
+
+Game has met all aspects of marking rubric.

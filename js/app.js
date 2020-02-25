@@ -33,8 +33,8 @@ const startTimer = () => {
             second = 0;
         }
     },1000);
-};
 }
+};
 startTimer();
 
 
@@ -53,18 +53,18 @@ const starRating = () => {
   if (moves <= 16) {
     starsElement.innerHTML =
     `<li><i class="fa fa-star"></i></li>
-   <li><i class="fa fa-star"></i></li>
-   <li><i class="fa fa-star"></i></li>
-   <li><i class="fa fa-star"></i></li>`; 
+    <li><i class="fa fa-star"></i></li>
+    <li><i class="fa fa-star"></i></li>
+    <li><i class="fa fa-star"></i></li>`; 
   } else if (moves > 16 && moves <= 22) {
     starsElement.innerHTML =
     `<li><i class="fa fa-star"></i></li>
-   <li><i class="fa fa-star"></i></li>
-   <li><i class="fa fa-star"></i></li>`;
+     <li><i class="fa fa-star"></i></li>
+     <li><i class="fa fa-star"></i></li>`;
   } else if (moves > 22 && moves <= 28) {
     starsElement.innerHTML =
     `<li><i class="fa fa-star"></i></li>
-   <li><i class="fa fa-star"></i></li>`;
+     <li><i class="fa fa-star"></i></li>`;
   } else if (moves > 28) {
     starsElement.innerHTML =
     `<li><i class="fa fa-star"></i></li>`;
@@ -83,15 +83,15 @@ function shuffle(array) {
       array[randomIndex] = temporaryValue;
     }
     return array;
-  }
+  };
 
 
 //start game function utilising the shuffle function above
 const startGame = () => {
-   let shuffledCards = shuffle(cardIconArray);
-   shuffledCards.forEach(function(item){
-    shuffledCardsArray.push(item)
-  })
+  let shuffledCards = shuffle(cardIconArray);
+  shuffledCards.forEach(function(item){
+  shuffledCardsArray.push(item)
+  });
 
 //Creates the game board
 for(let i = 0; i < shuffledCardsArray.length; i++) {
